@@ -1,7 +1,7 @@
 use anchor_lang::prelude::*;
 
 #[account]
-pub struct PollAccount {
+pub struct Poll {
     pub author: Pubkey,
     pub poll_id: u64,
     pub question: String,
@@ -21,4 +21,4 @@ pub struct VoteAccount {
     pub poll_id: u64,
     pub option_index: u32,
     pub timestamp: i64,
-}  
+}
