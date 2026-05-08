@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --color-brand-bg: #040707;
+  --color-brand-card: #0a1111;
+  --color-brand-primary: #10b981;
+  --color-brand-accent: #f59e0b;
+}
+
+body {
+  background-color: var(--color-brand-bg);
+  color: #ecf3f3;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.premium-card {
+  background: linear-gradient(145deg, rgba(16, 185, 129, 0.05) 0%, rgba(10, 17, 17, 0.8) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.1);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  backdrop-filter: blur(20px);
+}
+
+.premium-card:hover {
+  border-color: rgba(16, 185, 129, 0.3);
+  box-shadow: 0 0 25px rgba(16, 185, 129, 0.1);
+}
+
+.btn-action {
+  display: inline-block;
+  background: linear-gradient(to right, #10b981, #059669);
+  color: #040707;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 8px 0 #047857;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-action:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 0 #047857;
+  filter: brightness(1.1);
+}
+
+.btn-action:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 #047857;
+}
+
+.btn-action:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}

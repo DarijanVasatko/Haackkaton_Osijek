@@ -1,0 +1,11 @@
+{
+  "address": "11111111111111111111111111111111",
+  "metadata": {
+    "name": "voting_dapp",
+    "version": "0.1.0",
+    "spec": "0.1.0"
+  },
+  "instructions": [],
+  "accounts": [],
+  "types": []
+}
